@@ -17,7 +17,5 @@ func New() context.Handler {
 				ctx.Header("Access-Control-Max-Age", "1728000")
 			}
 		}()
-
-		ctx.Next()
 	}
 }
